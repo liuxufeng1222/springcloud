@@ -1,0 +1,16 @@
+server:
+  port: 18081
+eureka:
+  instance:
+    hostname: localhost
+  client:
+    register-with-eureka: false #配置服务注册中心是否以自己为客户端进行注册(配置false)
+    fetch-registry: false #是否取得注册信息(配置false)
+    service-url:
+      defaultZone: http://${eureka.instance.hostname}:${server.port}/eureka/
+    healthcheck:
+      enabled: true #检查eureka是否健康
+
+spring:
+  application:
+    name: yak-cloud-discovery

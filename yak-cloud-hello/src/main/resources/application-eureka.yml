@@ -1,0 +1,10 @@
+spring:
+  profiles:
+    include: eureka
+
+eureka:
+  instance:
+    hostname: localhost 	#配置主机名
+  client:
+    service-url:
+      defaultZone: http://localhost:18081/eureka/

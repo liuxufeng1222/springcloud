@@ -1,0 +1,8 @@
+server:
+  port: 18082
+spring:
+  application:
+    name: yak-cloud-client
+  profiles:
+    active: eureka
+
