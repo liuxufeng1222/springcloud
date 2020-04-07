@@ -1,0 +1,9 @@
+server:
+  port: 18085
+spring:
+  application:
+    name: yak-ribbon
+eureka:
+  client:
+    serviceUrl:
+      defaultZone: http://localhost:18081/eureka/
