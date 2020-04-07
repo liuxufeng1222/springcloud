@@ -1,5 +1,5 @@
 server:
-  port: 18082
+  port: 18088
 spring:
   application:
     name: yak-cloud-client
