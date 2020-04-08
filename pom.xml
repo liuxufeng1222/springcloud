@@ -21,6 +21,8 @@
         <module>yak-cloud-hello</module>
         <module>yak-ribbon</module>
         <module>yak-feign</module>
+        <module>yak-config-server</module>
+        <module>yak-config-client</module>
     </modules>
 
     <properties>
