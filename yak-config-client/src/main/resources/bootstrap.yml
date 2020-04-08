@@ -1,0 +1,11 @@
+
+spring:
+  application:
+    name: yak-config-client
+  cloud:
+    config:
+      name: yak-config
+      profile: dev
+      uri: http://localhost:18111
+server:
+  port: 18112
