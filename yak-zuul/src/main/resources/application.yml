@@ -1,0 +1,18 @@
+server:
+  port: 18100
+
+eureka:
+  client:
+    service-url:
+      defaultZone: http://localhost:18081/eureka/
+spring:
+  application:
+    name: yak-zuul
+zuul:
+  routes:
+    feign:
+      path: /feign/**
+      serviceId: yak-feign
+    ribbon:
+      path: /ribbon/**
+      serviceId: yak-ribbon
