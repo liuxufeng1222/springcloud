@@ -1,0 +1,15 @@
+server:
+  port: 18111
+spring:
+  application:
+    name: yak-config-server
+  profiles:
+    active:
+      - native
+  cloud:
+    config:
+      name: yak-config    #{application}
+      enabled: false
+      server:
+        health:
+          enabled: false
